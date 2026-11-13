@@ -1,9 +1,10 @@
 import pypdf
 import json
-import os
+from pathlib import Path
 
-pdf_path = r"c:\Users\HIEPHIEP\Downloads\DAY06_VIN_AI\K5-L3-Day06-2A202603565-DataIngestionEngineering\data\bo_luat_lao_dong_2019_clean.pdf"
-reader = pypdf.PdfReader(pdf_path)
+base_dir = Path(__file__).resolve().parents[2]
+pdf_path = base_dir / "data" / "bo_luat_lao_dong_2019_clean.pdf"
+reader = pypdf.PdfReader(str(pdf_path))
 
 pages_meta = []
 total_chars = 0
@@ -30,9 +31,8 @@ manifest = {
     "pages": pages_meta
 }
 
-manifest_path = r"c:\Users\HIEPHIEP\Downloads\DAY06_VIN_AI\K5-L3-Day06-2A202603565-DataIngestionEngineering\data\manifest.json"
+manifest_path = base_dir / "data" / "manifest.json"
 with open(manifest_path, "w", encoding="utf-8") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)
 
 print("Manifest created successfully at:", manifest_path)
-

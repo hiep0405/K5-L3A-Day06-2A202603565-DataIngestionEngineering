@@ -39,7 +39,7 @@
   - Khởi tạo & nạp lại: Mỗi chiến lược được tạo collection riêng biệt (`strategy_a_fixed`, `strategy_b_paragraph`, `strategy_c_filtered`). Cơ chế kiểm tra nạp lại: Nếu collection đã tồn tại và đủ số lượng chunk, hệ thống tái sử dụng index mà không nhân bản dữ liệu.
 - **Lệnh chạy tái lập pipeline:**
   ```powershell
-  cd c:\Users\HIEPHIEP\Downloads\DAY06_VIN_AI\K5-L3-Day06-2A202603565-DataIngestionEngineering\starter
+  cd starter
   .\.venv\Scripts\Activate.ps1
   python -m src.run
   ```
