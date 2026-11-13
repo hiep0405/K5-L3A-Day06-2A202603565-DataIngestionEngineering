@@ -8,9 +8,23 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 |---|---|---|
 | Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
 
-## Bắt đầu nhanh
+## Bắt đầu nhanh & Tái lập kết quả
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+Bài làm này sử dụng **ChromaDB (Persistent Storage)** và mô hình embedding cục bộ đa ngữ `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (384 dimensions), chạy hoàn toàn offline với chi phí $0:
+
+```powershell
+cd starter
+# Kích hoạt môi trường ảo:
+.\.venv\Scripts\Activate.ps1
+# Cài đặt thư viện:
+pip install -r requirements.txt
+# Chạy toàn bộ pipeline (Ingestion -> Chunking -> Vector Store -> Evaluation):
+python -m src.run
+# Chạy audit đánh giá 5 khía cạnh:
+$env:PYTHONPATH="."
+python scripts/audit_coherence.py
+python scripts/audit_eval.py
+```
 
 ## 1. Xây pipeline
 

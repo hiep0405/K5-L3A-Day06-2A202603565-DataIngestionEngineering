@@ -1,0 +1,80 @@
+{
+  "A": {
+    "dev": {
+      "total": 15,
+      "hit1": 5,
+      "hit3": 8,
+      "hit1_rate": 0.3333,
+      "hit3_rate": 0.5333
+    },
+    "test": {
+      "total": 5,
+      "hit1": 3,
+      "hit3": 3,
+      "hit1_rate": 0.6,
+      "hit3_rate": 0.6
+    },
+    "overall": {
+      "total": 20,
+      "hit1": 8,
+      "hit3": 11,
+      "hit1_rate": 0.4,
+      "hit3_rate": 0.55
+    },
+    "time_seconds": 0.43,
+    "chunk_count": 481,
+    "cost_usd": 0.0
+  },
+  "B": {
+    "dev": {
+      "total": 15,
+      "hit1": 7,
+      "hit3": 10,
+      "hit1_rate": 0.4667,
+      "hit3_rate": 0.6667
+    },
+    "test": {
+      "total": 5,
+      "hit1": 3,
+      "hit3": 3,
+      "hit1_rate": 0.6,
+      "hit3_rate": 0.6
+    },
+    "overall": {
+      "total": 20,
+      "hit1": 10,
+      "hit3": 13,
+      "hit1_rate": 0.5,
+      "hit3_rate": 0.65
+    },
+    "time_seconds": 0.6,
+    "chunk_count": 436,
+    "cost_usd": 0.0
+  },
+  "C": {
+    "dev": {
+      "total": 15,
+      "hit1": 7,
+      "hit3": 10,
+      "hit1_rate": 0.4667,
+      "hit3_rate": 0.6667
+    },
+    "test": {
+      "total": 5,
+      "hit1": 3,
+      "hit3": 3,
+      "hit1_rate": 0.6,
+      "hit3_rate": 0.6
+    },
+    "overall": {
+      "total": 20,
+      "hit1": 10,
+      "hit3": 13,
+      "hit1_rate": 0.5,
+      "hit3_rate": 0.65
+    },
+    "time_seconds": 0.43,
+    "chunk_count": 436,
+    "cost_usd": 0.0
+  }
+}

@@ -1,4 +1,7 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
-psycopg[binary]==3.3.8
+# Core setup and PDF parsing.
 pypdf>=5,<7
 python-dotenv>=1,<2
+chromadb>=0.4.20
+sentence-transformers>=2.2.0
+torch
+python-docx>=1.0.0

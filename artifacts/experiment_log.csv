@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size,500,50,"source,page,chapter",none,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Fixed window baseline,0.3333,0.5333,0.6,0.6,Baseline fixed chunking without metadata filter
+B,by_paragraph,600,0,"source,page,chapter",none,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Structure chunking preserves complete provisions,0.4667,0.6667,0.6,0.6,Improved coherence and boundary alignment
+C,by_paragraph,600,0,"source,page,chapter",chapter_filter,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Metadata filter narrows search space and removes cross-chapter noise,0.4667,0.6667,0.6,0.6,Eliminates false positives across different legal chapters
